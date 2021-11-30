@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YERBAS</title>
+	<!-- agregamos poiret one de google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+	<!-- nuestro css -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="grid-inicio">
+	<!-- encabezado del sitio -->
+	<header class="header">
+		<!-- logo -->
+		<div class="header__logo" class="grid-logo"> 
+			<a href="../index.html">
+				<img src="../assets/img/favicon.jpg" alt="logo">
+			</a> 
+		</div>
+		<!-- nav menu barra -->
+		<nav class="header__menu" class="grid-nav">
+			<!-- lista no ordenada del menu barra -->
+			<li><a href="../index.html" class="header__menu--blanco">INICIO</a></li>
+			<li><a href="../pages/mates.html" class="header__menu--blanco" >MATES</a></li>
+			<li><a href="#" class="header__menu--blanco">YERBAS</a></li>
+			<li><a href="../pages/ventaspormayor.html" class="header__menu--blanco">VENTAS POR MAYOR</a></li>
+			<li><a href="../pages/tipsmateros.html" class="header__menu--blanco">TIPS MATEROS</a></li>
+		</nav>
+	</header>
+	<!-- cierre encabezado de sitio -->
+	<!-- inicio contenido -->
+	<main class="yerbas">
+		<!-- formulario -->
+		<form action="" class="yerbas__reiverde grid-yerbas-reiverde">
+			<h3 class="yerbas__consulta">Que yerba quiere?</h3>
+			<h4 class="yerbas__reiverde-titulo">Rei Verde
+				<input type="radio" name="yerbas" value="Rei Verde">
+			</h4>
+				<div class="yerbas__reiverde--tamaño">Tamaño <br>
+					<select name="Tamaño" id="">
+					    <option value="500gr">500gr</option>
+						<option value="1kg">1kg</option>	
+					</select>
+				</div>
+				<div class="yerbas__reiverde--cantidad">Cantidad <br>
+					<select name="Cantidad" id="" class="cantidad__reiverde">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+		</form>		
+				<div class="yerbas__reiverde--imagen grid-reiverde-img">
+					<img src="../assets/img/reiverde.jfif" width="350px" height="300x" alt="yerba rei verde" class="img__reiverde">
+				</div>
+			
+		<form action="" class="yerbas__canarias grid-yerbas-canarias">	
+			<h4 class="yerbas__canarias-titulo">Canarias
+				<input type="radio" name="yerbas" value="Canarias">	
+			</h4>
+				<div class="yerbas__canarias--tamaño">Tamaño <br>
+					<select name="Tamaño" id="">
+					    <option value="500gr">500gr</option>
+					    <option value="1kg">1kg</option> 	
+					</select>
+				</div>
+				<div class="yerbas__canarias--cantidad">Cantidad <br>
+					<select name="Cantidad" id="" class="cantidad__canarias">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+		</form>			
+				<div class="yerbas__canarias--imagen grid-canarias-img">
+					<img src="../assets/img/canarias.jpg" width="450px" height="300px" alt="yerba canarias" class="img__canarias">
+				</div>
+					<!-- boton agregar a carrito -->
+			<section class="yerbas__agregar-a-carrito grid-yerbas-carrito">
+				<input type="button" value="Agregar a carrito">
+			</section>
+	</main>
+	<!-- cierre contenido -->
+	<!-- inicio footer -->
+	<footer class="footer">
+		<div>
+			<!-- mapa ubicacion iframe-->
+			<iframe class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13394.052503775642!2d-60.6742306!3d-32.9374595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c0a8e8fb9fd8392!2sMates%20Alto%20Mate!5e0!3m2!1ses!2sar!4v1635495009048!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+		</div>
+		<div class="footer__contacto">
+			<!-- contacto en pie de pagina -->
+			<h2>CONTACTO</h2>
+		    <p>contacto@altomate.com</p>
+		    <p>tel:341 9857801</p>
+		</div>
+			<!-- RRSS -->
+		<div class="footer__rrss" class="grid__footer-rrss">
+			<!-- logos RRSS -->
+			<h2>SEGUINOS EN</h2>
+			<P>Facebook</P>
+			<p>Instagram</p>
+		</div>
+	</footer>
+	<!-- cierre footer -->
+</body>
+</html>
