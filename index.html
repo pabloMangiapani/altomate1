@@ -3,7 +3,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>altomate</title>
 	<!-- agregamos poiret one de google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,59 +13,77 @@
 	<!-- nuestro css -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="grid-inicio">
+<body>
 	<!-- encabezado del sitio -->
-	<header class="header">
-		<!-- logo -->
-		<div class="header__logo"  class="grid-logo"> 
-			<img src="assets/img/favicon.jpg" alt="logo"> 
-		</div>
-		<!-- nav menu barra -->
-		<nav class="header__menu" class="grid-nav">
-			<!-- lista no ordenada del menu barra -->
-			<li><a href="#" class="header__menu--blanco">INICIO</a></li>
-			<li><a href="pages/mates.html" class="header__menu--blanco">MATES</a></li>
-			<li><a href="pages/yerbas.html" class="header__menu--blanco">YERBAS</a></li>
-			<li><a href="pages/ventaspormayor.html" class="header__menu--blanco">VENTAS POR MAYOR</a></li>
-			<li><a href="pages/tipsmateros.html" class="header__menu--blanco">TIPS MATEROS</a></li>
-		</nav>
-	</header>
+	<div class="container-fluid">
+		<header class="header" class="row">
+			<!-- logo -->
+				<div class="header__logo"  class="grid-logo" class="col-lg-6 col-sm-6"> 
+					<img src="assets/img/favicon.jpg" alt="logo"> 
+				</div>
+			<!-- nav menu barra -->
+				<nav class="header__menu" class="grid-nav" class="col-lg-6 col-sm-6">
+				<!-- lista no ordenada del menu barra -->
+					<li>
+						<a href="#" class="header__menu--blanco">INICIO</a>
+					</li>
+					<li>
+						<a href="pages/mates.html" class="header__menu--blanco">MATES</a>
+					</li>
+					<li>
+						<a href="pages/yerbas.html" class="header__menu--blanco">YERBAS</a>
+					</li>
+					<li>
+						<a href="pages/ventaspormayor.html" class="header__menu--blanco">VENTAS POR MAYOR</a>
+					</li>
+					<li>
+						<a href="pages/tipsmateros.html" class="header__menu--blanco">TIPS MATEROS</a>
+					</li>
+				</nav>
+		</header>
+	</div>
 	<!-- cierre encabezado de sitio -->
 	<!-- inicio contenido -->
-	<main class="parallax" id="grid-main"> 
+	<div class="container-fluid">
+		<div class="row">
+			<main class="parallax col-lg-12 col-sm-12"> 
 		<!-- texto en img -->
-		<section>
-			    <p>SIEMPRE</p>
-			    <p>ES BUEN</p>
-			    <p>MOMENTO</p>
-			    <p>PARA UN</p>
-			    <p>ALTOMATE</p>
-			    
-		</section>
-	</main>
+				<section>
+			    	<p>SIEMPRE</p> 
+			    	<p>ES BUEN</p>
+			    	<P>MOMENTO</P>
+			    	<P>PARA UN</P>
+			    	<P>ALTOMATE</P>
+				</section>
+			</main>
+		</div>
+	</div>
 	<!-- cierre contenido -->
 	<!-- inicio footer -->
-	<footer class="footer" class="grid-footer">
-		<div>
+	<footer class="footer" class="grid-footer" class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4 col-sm-4">
 			<!-- mapa ubicacion iframe-->
-			<iframe class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13394.052503775642!2d-60.6742306!3d-32.9374595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c0a8e8fb9fd8392!2sMates%20Alto%20Mate!5e0!3m2!1ses!2sar!4v1635495009048!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+				<iframe class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13394.052503775642!2d-60.6742306!3d-32.9374595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c0a8e8fb9fd8392!2sMates%20Alto%20Mate!5e0!3m2!1ses!2sar!4v1635495009048!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+			</div>
 		</div>
-		<div class="footer__contacto">
+		<div class="footer__contacto" class="col-lg-4 col-sm-4">
 			<!-- contacto en pie de pagina -->
 			<h2>CONTACTO</h2>
 		    <p>contacto@altomate.com</p>
 		    <p>tel:341 9857801</p>
 		</div>
-			<!-- RRSS -->
-		<div class="footer__rrss">
+		<!-- RRSS -->
+		<div class="footer__rrss" class="col-lg-4 col-sm-4">
 			<!-- logos RRSS -->
 			<h2>SEGUINOS EN</h2>
 			<P>Facebook</P>
 			<p>Instagram</p>
 		</div>
+		
 	</footer>
 	<!-- cierre footer -->
-	<!-- scripts de bootstrap -->
+	<!-- scripts bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>

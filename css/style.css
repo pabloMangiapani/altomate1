@@ -10,6 +10,8 @@
     75deg, rgb(129 130 136 / 90%) 0%, #60656c 50%, #2a2c2e 100%);
 	position: sticky;
 	top: 0px;
+	margin-right: -15px;
+	margin-left: -15px;
 }
 header div img{
 	height: 80px;
@@ -91,6 +93,8 @@ section{
 section p {
 	background-color: transparent;
 	padding: 15px 15px 15px 15px ;
+	font-size: 55px !important;
+	color: whitesmoke !important;
 }
 
 /*footer*/
@@ -104,6 +108,8 @@ section p {
 	padding: 30px 15px 30px 25px;
 	width: 300px;
 	height: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 /*aplico flexbox en footer*/
@@ -419,6 +425,8 @@ div p {
 /*aplico flex en logo*/
 .header{
 	display: flex;
+	margin-right: -15px;
+	margin-left: -15px;
 }	
 
 
@@ -455,6 +463,8 @@ section{
 section p {
 	background-color: transparent;
 	padding: 15px 15px 15px 15px ;
+	color: whitesmoke;
+	font-size: 35px !important;
 }
 
 /*footer*/
@@ -467,7 +477,8 @@ section p {
 	padding: 30px 15px 30px 25px;
 	width: 300px;
 	height: 150px;
-	padding-left: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 /*aplico flexbox en footer*/
@@ -523,15 +534,17 @@ div p {
 }
 .curarmate__titulo{
 	display: flex;
-	font-size: 30px;
+	font-size: 15px;
 	color: whitesmoke;
+	padding-right: 80px !important;
 }
 .curarmate__texto{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 45px;
+	padding-right: 125px;
+	font-size: 10px;
 }
 .tutoriales{
 	background-color: darkgray;
@@ -539,12 +552,19 @@ div p {
 	font-family: 'Poiret One', cursive;
 }
 .tutoriales__titulo{
-	font-size: 30px;
+	font-size: 20px;
 }
 .tutoriales__tiposdemates{
-	font-size: 20px;
+	font-size: 10px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	padding-left: 35px !important;
+}
+.video-tipos-mates{
+	display: flex;
+	height: 200px !important;
+	width: 250px !important;
+	padding-left: 35px !important;
 }
 
 /*vista mobil yerbas*/
