@@ -267,7 +267,7 @@ div p {
 	padding-bottom: 15px;
 }
 
-/*ventas por mayot*/
+/*ventas por mayor*/
 /*grid ventas por mayor*/
 .grid-ventas{
 	display: grid;
@@ -409,9 +409,15 @@ div p {
 	"header"
 	"parallax" 
 	"footer"  ;
-	grid-template-columns: 200%;
+	grid-template-columns: 100%;
 	grid-template-rows: auto auto auto auto ;
 	background-color: lightgray;
+}
+.header__menu--blanco{
+	font-size: 10px;
+	flex-wrap: wrap;
+	height: 0px;
+
 }
  .header{
 	grid-area: header;
@@ -429,12 +435,18 @@ div p {
 	margin-left: -15px;
 }	
 
+header div a img{
+	width: 40px;
+	height: 35px;
+	padding-left: 10px;
+}
 
 /*barra nav con flexbox*/
 .header__menu{
 	display: flex;
-	justify-content: flex-end;
 	width: 750px;
+	font-size: 10px;
+	justify-items: stretch;
 }
 
 /*imagen con texto index */
@@ -715,12 +727,13 @@ div p {
 	"img__cinco img__seis" 
 	"descrip__cinco descrip__seis" 
 	"precio__cinco precio__seis";
-	grid-template-columns:  300px;
+	grid-template-columns:  150px;
 	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
 	grid-row-gap: 5px;
 	grid-column-gap: 8px;
 	justify-content: space-evenly;
 	padding-top: 25px;
+	padding-left: 20px;
 }
 .border{
 	border: 1px solid black;
@@ -747,6 +760,31 @@ div p {
 	display: flex;
 	justify-content: space-evenly;
 }
+.img__uno{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__dos{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__tres{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__cuatro{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__cinco{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__seis{
+	width: 150px !important;
+	height: 120px !important;
+}
+
 .mates{
 	background-color: darkgray;
 	font-family: 'Poiret One', cursive;
