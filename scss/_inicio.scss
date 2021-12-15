@@ -1,0 +1,125 @@
+/*reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.grid-inicio{
+	display: grid;
+	grid-template-areas: 
+	"header" "header" "header" 
+	"parallax" "parallax" "parallax"
+	"footer" "footer" "footer";
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+}
+.header{
+	grid-area: header;
+}
+.parallax{
+	grid-area: parallax;
+}
+.footer{
+	grid-area: footer;
+}
+
+/*imagen con texto index */
+.parallax {
+	background-image: url(../assets/img/matelago.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-size: 125px;
+	color: whitesmoke;
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+
+
+
+
+	height: 900px;
+}
+
+section{
+	display: inline-block;
+	background: transparent;
+}
+section p {
+	background-color: transparent;
+	padding: 15px 15px 15px 15px ;
+	font-size: 55px !important;
+	color: whitesmoke !important;
+}
+
+
+
+
+
+
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 768px){
+  .grid-inicio{
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"header"
+	"parallax" 
+	"footer"  ;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto ;
+	background-color: lightgray;
+}
+.header__menu--blanco{
+	font-size: 10px;
+	flex-wrap: wrap;
+	height: 0px;
+
+}
+ .header{
+	grid-area: header;
+}
+ .parallax{
+	grid-area: parallax;
+}
+ .footer{
+	grid-area: footer;
+}
+
+header div a img{
+	width: 40px;
+	height: 35px;
+	padding-left: 10px;
+}
+
+
+/*imagen con texto index */
+.parallax {
+	background-image: url(../assets/img/matelago.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-size: 45px;
+	color: whitesmoke;
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+	padding-top: 85px;
+
+
+
+
+	height: 900px;
+}
+
+section{
+	display: inline-block;
+	background: transparent;
+}
+section p {
+	background-color: transparent;
+	padding: 15px 15px 15px 15px ;
+	color: whitesmoke;
+	font-size: 35px !important;
+}
+}

@@ -1,0 +1,180 @@
+/*yerbas*/
+/*grid yerba rei verde*/
+.yerbas{
+	display: grid;
+	grid-template-areas: 
+	"grid-yerbas-reiverde" "grid-reiverde-img"
+	"grid-yerbas-canarias" "grid-yerbas-canarias-img"
+	"grid-yerbas-carrito" "grid-yerbas-carrito" ;
+	grid-template-columns: 100%;
+	grid-template-rows: 250px 300px 350px;
+	background-color: darkgray;
+}
+.grid-yerbas-reiverde{
+	grid-area: grid-yerbas-reiverde;
+}
+.grid-yerbas-img{
+	grid-area: grid-yerbas-img;
+}
+.grid-yerbas-canarias{
+	grid-area: grid-yerbas-canarias;
+}
+.grid-yerbas-canarias-img{
+	grid-area: grid-yerbas-canarias-img;
+}
+.grid-yerbas-carrito{
+	grid-area: grid-yerbas-carrito;
+}
+.yerbas__reiverde{
+	font-family: 'Poiret One', cursive;
+	background-color: darkgray;
+	color: whitesmoke;
+}
+.yerbas__consulta{
+	font-size: 32px;
+	text-align: center;
+	padding-top: 25px;
+}
+.yerbas__reiverde-titulo{
+	padding-left: 25px;
+	padding-top: 35px;
+	font-size: 23px;
+}
+.yerbas__reiverde--tamaño{
+	padding-left: 20px;
+	padding-top: 10px;
+	font-size: 18px;
+}
+.yerbas__reiverde--cantidad{
+	padding-left: 20px;
+	padding-top: 5px;
+	font-size: 18px;
+}
+.yerbas__reiverde--imagen{
+	display: flex;
+	justify-content: center;
+}
+.yerbas__canarias{
+	font-family: 'Poiret One', cursive;
+	background-color: darkgray;
+	color: whitesmoke;
+}
+.yerbas__canarias-titulo{
+	font-size: 23px;
+	padding-top: 150px;
+	padding-left: 25px;
+}
+.yerbas__canarias--tamaño{
+	padding-left: 20px;
+	padding-top: 10px;
+	font-size: 18px;
+}
+.yerbas__canarias--cantidad{
+	padding-left: 20px;
+	padding-top: 5px;
+	font-size: 18px;
+}
+.yerbas__canarias--imagen{
+	display: flex;
+	justify-content: center;
+}
+.yerbas__agregar-a-carrito{
+	display: flex;
+	justify-content: space-around;
+	font-size: 16px;
+	padding-top: 150px;
+	padding-left: 25px;
+	padding-bottom: 35px;
+}
+
+/*vista mobile yerbas*/
+@media only screen and (min-width: 0px) and (max-width: 768px){
+.yerbas{
+	display: grid;
+	grid-template-areas: 
+	"grid-yerbas-reiverde" "grid-reiverde-img"
+	"grid-yerbas-canarias" "grid-yerbas-canarias-img"
+	"grid-yerbas-carrito" "grid-yerbas-carrito" ;
+	grid-template-columns: 100%;
+	grid-template-rows: 200px 300px 300px;
+	background-color: darkgray;
+}
+.grid-yerbas-reiverde{
+	grid-area: grid-yerbas-reiverde;
+}
+.grid-yerbas-img{
+	grid-area: grid-yerbas-img;
+}
+.grid-yerbas-canarias{
+	grid-area: grid-yerbas-canarias;
+}
+.grid-yerbas-canarias-img{
+	grid-area: grid-yerbas-canarias-img;
+}
+.grid-yerbas-carrito{
+	grid-area: grid-yerbas-carrito;
+}
+.yerbas__reiverde{
+	font-family: 'Poiret One', cursive;
+	background-color: darkgray;
+	color: whitesmoke;
+}
+.yerbas__consulta{
+	font-size: 32px;
+	text-align: center;
+	padding-top: 25px;
+}
+.yerbas__reiverde-titulo{
+	padding-left: 25px;
+	padding-top: 35px;
+	font-size: 23px;
+}
+.yerbas__reiverde--tamaño{
+	padding-left: 20px;
+	padding-top: 10px;
+	font-size: 18px;
+}
+.yerbas__reiverde--cantidad{
+	padding-left: 20px;
+	padding-top: 5px;
+	font-size: 18px;
+}
+.yerbas__reiverde--imagen{
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+}
+.yerbas__canarias{
+	font-family: 'Poiret One', cursive;
+	background-color: darkgray;
+	color: whitesmoke;
+}
+.yerbas__canarias-titulo{
+	font-size: 23px;
+	padding-top: 40px;
+	padding-left: 25px;
+}
+.yerbas__canarias--tamaño{
+	padding-left: 20px;
+	padding-top: 10px;
+	font-size: 18px;
+}
+.yerbas__canarias--cantidad{
+	padding-left: 20px;
+	padding-top: 5px;
+	font-size: 18px;
+}
+.yerbas__canarias--imagen{
+	display: flex;
+	justify-content: center;
+}
+.yerbas__agregar-a-carrito{
+	display: flex;
+	justify-content: space-around;
+	font-size: 16px;
+	padding-top: 30px;
+	padding-left: 25px;
+	padding-bottom: 35px;
+}
+
+}

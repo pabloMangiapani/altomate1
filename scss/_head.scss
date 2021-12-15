@@ -1,0 +1,63 @@
+.header{
+	position: sticky;
+	top: 0px;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+header div img{
+	height: 80px;
+	width: 95px;
+}
+
+/*menu*/
+.header__menu--blanco{
+	color: whitesmoke;
+	border-color: darkgray;
+	list-style-type: none;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+}
+nav li{
+	display: inline-block;	
+	padding: 15px;
+}
+/*aplico flex en logo*/
+.header{
+	display: flex;
+}	
+
+/*barra nav con flexbox*/
+.header__menu{
+	display: flex;
+	justify-content: flex-end;
+	width: 1020px;
+}
+
+/*vista mobile head*/
+@media only screen and (min-width: 0px) and (max-width: 768px){
+.header__menu--blanco{
+	font-size: 10px;
+	flex-wrap: wrap;
+	height: 0px;
+
+}
+
+/*aplico flex en logo*/
+.header{
+	display: flex;
+	margin-right: -15px;
+	margin-left: -15px;
+}	
+
+/*barra nav con flexbox*/
+.header__menu{
+	display: flex;
+	width: 750px;
+	font-size: 10px;
+	justify-items: stretch;
+}
+	
+}
+

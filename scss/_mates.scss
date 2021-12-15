@@ -1,0 +1,144 @@
+/*mates*/
+.mates{
+	background-color: darkgray;
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+	color: whitesmoke;
+	text-align: left;
+	list-style-type: none;
+	height: 800px;
+	margin: 0px;
+}
+
+/*grid mates*/
+.galeria__mates{
+	display: grid;
+	grid-template-areas:
+	"mate__uno mate__dos mate__tres" 
+	"img__uno img__dos img__tres" 
+	"descrip__uno descrip__dos descrip__tres" 
+	"precio__uno precio__dos precio__tres" 
+	"mate__cuatro mate__cinco mate__seis" 
+	"img__cuatro img__cinco img__seis" 
+	"descrip__cuatro descrip__cinco descrip__seis" 
+	"precio__cuatro precio__cinco precio__seis";
+	grid-template-columns:  300px 300px 300px;
+	grid-template-rows: 14% 12% 12% 12% 12% 12% 12% 14%;
+	grid-row-gap: 10px;
+	grid-column-gap: 15px;
+	justify-content: space-evenly;
+	padding-top: 85px;
+}
+.border{
+	border: 1px solid black;
+}
+.mate__uno{
+	grid-area: mate__uno;
+}
+.mate__dos{
+	grid-area: mate__dos;
+}
+.mate__tres{
+	grid-area: mate__tres;
+}
+.mate__cuatro{
+	grid-area: mate__cuatro;
+}
+.mate__cinco{
+	grid-area: mate__cinco;
+}
+.mate__seis{
+	grid-area: mate__seis;
+}
+.mates{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/*vista mobile mates*/
+@media only screen and (min-width: 0px) and (max-width: 768px){
+.galeria__mates{
+	display: grid;
+	grid-template-areas:
+	"mate__uno mate__dos" 
+	"img__uno img__dos"
+	"descrip__uno descrip__dos"
+	"precio__uno precio__dos"
+	"mate__tres mate__cuatro"
+	"img__tres img__cuatro "
+	"descrip__tres descrip__cuatro" 
+	"precio__tres precio__cuatro" 
+	"mate__cinco mate__seis" 
+	"img__cinco img__seis" 
+	"descrip__cinco descrip__seis" 
+	"precio__cinco precio__seis";
+	grid-template-columns:  150px;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-row-gap: 5px;
+	grid-column-gap: 8px;
+	justify-content: space-evenly;
+	padding-top: 25px;
+	padding-left: 20px;
+}
+.border{
+	border: 1px solid black;
+}
+.mate__uno{
+	grid-area: mate__uno;
+}
+.mate__dos{
+	grid-area: mate__dos;
+}
+.mate__tres{
+	grid-area: mate__tres;
+}
+.mate__cuatro{
+	grid-area: mate__cuatro;
+}
+.mate__cinco{
+	grid-area: mate__cinco;
+}
+.mate__seis{
+	grid-area: mate__seis;
+}
+.mates{
+	display: flex;
+	justify-content: space-evenly;
+}
+.img__uno{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__dos{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__tres{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__cuatro{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__cinco{
+	width: 150px !important;
+	height: 120px !important;
+}
+.img__seis{
+	width: 150px !important;
+	height: 120px !important;
+}
+
+.mates{
+	background-color: darkgray;
+	font-family: 'Poiret One', cursive;
+	font-size: 10px;
+	color: whitesmoke;
+	text-align: left;
+	list-style-type: none;
+	height: 750px;
+	margin: 0px;
+}
+
+}

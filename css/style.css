@@ -1,0 +1,580 @@
+@charset "UTF-8";
+.header {
+  position: sticky;
+  top: 0px;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+header div img {
+  height: 80px;
+  width: 95px; }
+
+/*menu*/
+.header__menu--blanco {
+  color: whitesmoke;
+  border-color: darkgray;
+  list-style-type: none;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px; }
+
+nav li {
+  display: inline-block;
+  padding: 15px; }
+
+/*aplico flex en logo*/
+.header {
+  display: flex; }
+
+/*barra nav con flexbox*/
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 1020px; }
+
+/*vista mobile head*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .header__menu--blanco {
+    font-size: 10px;
+    flex-wrap: wrap;
+    height: 0px; }
+  /*aplico flex en logo*/
+  .header {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px; }
+  /*barra nav con flexbox*/
+  .header__menu {
+    display: flex;
+    width: 750px;
+    font-size: 10px;
+    justify-items: stretch; } }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0; }
+
+.grid-inicio {
+  display: grid;
+  grid-template-areas: "header" "header" "header"  "parallax" "parallax" "parallax" "footer" "footer" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto; }
+
+.header {
+  grid-area: header; }
+
+.parallax {
+  grid-area: parallax; }
+
+.footer {
+  grid-area: footer; }
+
+/*imagen con texto index */
+.parallax {
+  background-image: url(../assets/img/matelago.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 125px;
+  color: whitesmoke;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  height: 900px; }
+
+section {
+  display: inline-block;
+  background: transparent; }
+
+section p {
+  background-color: transparent;
+  padding: 15px 15px 15px 15px;
+  font-size: 55px !important;
+  color: whitesmoke !important; }
+
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .grid-inicio {
+    display: grid;
+    grid-template-areas: "header" "header" "parallax"  "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    background-color: lightgray; }
+  .header__menu--blanco {
+    font-size: 10px;
+    flex-wrap: wrap;
+    height: 0px; }
+  .header {
+    grid-area: header; }
+  .parallax {
+    grid-area: parallax; }
+  .footer {
+    grid-area: footer; }
+  header div a img {
+    width: 40px;
+    height: 35px;
+    padding-left: 10px; }
+  /*imagen con texto index */
+  .parallax {
+    background-image: url(../assets/img/matelago.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 45px;
+    color: whitesmoke;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    padding-top: 85px;
+    height: 900px; }
+  section {
+    display: inline-block;
+    background: transparent; }
+  section p {
+    background-color: transparent;
+    padding: 15px 15px 15px 15px;
+    color: whitesmoke;
+    font-size: 35px !important; } }
+
+/*footer*/
+.footer {
+  background-color: lightgrey; }
+
+/*footer google maps*/
+.footer__mapa {
+  padding: 30px 15px 30px 25px;
+  width: 300px;
+  height: 200px;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+/*aplico flexbox en footer*/
+.footer {
+  display: flex;
+  justify-content: space-around; }
+
+div h2 {
+  color: black;
+  border-color: darkgray;
+  font-family: 'Poiret One', cursive;
+  font-size: 25px;
+  text-align: center;
+  line-height: 3; }
+
+div p {
+  color: black;
+  border-color: darkgray;
+  font-family: 'Poiret One', cursive;
+  font-size: 15px;
+  text-align: center;
+  line-height: 2; }
+
+/*vista mobile footer*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /*footer*/
+  .footer {
+    background-color: lightgray; }
+  /*footer google maps*/
+  .footer__mapa {
+    padding: 30px 15px 30px 25px;
+    width: 300px;
+    height: 150px;
+    padding-left: 50px;
+    padding-right: 50px; }
+  /*aplico flexbox en footer*/
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+  div h2 {
+    color: black;
+    border-color: darkgray;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    text-align: center;
+    line-height: 3; }
+  div p {
+    color: black;
+    border-color: darkgray;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    text-align: center;
+    line-height: 2; } }
+
+/*mates*/
+.mates {
+  background-color: darkgray;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: left;
+  list-style-type: none;
+  height: 800px;
+  margin: 0px; }
+
+/*grid mates*/
+.galeria__mates {
+  display: grid;
+  grid-template-areas: "mate__uno mate__dos mate__tres"  "img__uno img__dos img__tres"  "descrip__uno descrip__dos descrip__tres"  "precio__uno precio__dos precio__tres"  "mate__cuatro mate__cinco mate__seis"  "img__cuatro img__cinco img__seis"  "descrip__cuatro descrip__cinco descrip__seis"  "precio__cuatro precio__cinco precio__seis";
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 14% 12% 12% 12% 12% 12% 12% 14%;
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
+  justify-content: space-evenly;
+  padding-top: 85px; }
+
+.border {
+  border: 1px solid black; }
+
+.mate__uno {
+  grid-area: mate__uno; }
+
+.mate__dos {
+  grid-area: mate__dos; }
+
+.mate__tres {
+  grid-area: mate__tres; }
+
+.mate__cuatro {
+  grid-area: mate__cuatro; }
+
+.mate__cinco {
+  grid-area: mate__cinco; }
+
+.mate__seis {
+  grid-area: mate__seis; }
+
+.mates {
+  display: flex;
+  justify-content: space-evenly; }
+
+/*vista mobile mates*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .galeria__mates {
+    display: grid;
+    grid-template-areas: "mate__uno mate__dos"  "img__uno img__dos" "descrip__uno descrip__dos" "precio__uno precio__dos" "mate__tres mate__cuatro" "img__tres img__cuatro " "descrip__tres descrip__cuatro"  "precio__tres precio__cuatro"  "mate__cinco mate__seis"  "img__cinco img__seis"  "descrip__cinco descrip__seis"  "precio__cinco precio__seis";
+    grid-template-columns: 150px;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-row-gap: 5px;
+    grid-column-gap: 8px;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    padding-left: 20px; }
+  .border {
+    border: 1px solid black; }
+  .mate__uno {
+    grid-area: mate__uno; }
+  .mate__dos {
+    grid-area: mate__dos; }
+  .mate__tres {
+    grid-area: mate__tres; }
+  .mate__cuatro {
+    grid-area: mate__cuatro; }
+  .mate__cinco {
+    grid-area: mate__cinco; }
+  .mate__seis {
+    grid-area: mate__seis; }
+  .mates {
+    display: flex;
+    justify-content: space-evenly; }
+  .img__uno {
+    width: 150px !important;
+    height: 120px !important; }
+  .img__dos {
+    width: 150px !important;
+    height: 120px !important; }
+  .img__tres {
+    width: 150px !important;
+    height: 120px !important; }
+  .img__cuatro {
+    width: 150px !important;
+    height: 120px !important; }
+  .img__cinco {
+    width: 150px !important;
+    height: 120px !important; }
+  .img__seis {
+    width: 150px !important;
+    height: 120px !important; }
+  .mates {
+    background-color: darkgray;
+    font-family: 'Poiret One', cursive;
+    font-size: 10px;
+    color: whitesmoke;
+    text-align: left;
+    list-style-type: none;
+    height: 750px;
+    margin: 0px; } }
+
+/*tips materos*/
+/*aplico grid */
+.grid-tipsmateros {
+  display: grid;
+  grid-template-areas: "grid-curarmate-titulo" "grid-curarmate-titulo" "grid-curarmate-texto" "grid-curarmate-texto" "grid-tutoriales" "grid-tutoriales";
+  grid-template-columns: 100%;
+  grid-template-rows: 350px 650px;
+  background-color: darkgray; }
+
+.grid-curarmate-titulo {
+  grid-area: grid-curarmate-titulo; }
+
+.grid-curarmate-texto {
+  grid-area: grid-curarmate-texto; }
+
+.grid-tutoriales {
+  grid-area: grid-tutoriales; }
+
+.curarmate {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: darkgray;
+  font-family: 'Poiret One', cursive;
+  height: 300px;
+  background: radial-gradient(circle, #757a83 0%, #bbbfc5 100%); }
+
+.curarmate__titulo {
+  display: flex;
+  font-size: 30px;
+  color: whitesmoke; }
+
+.curarmate__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 25px;
+  background: -webkit-linear-gradient(45deg, #292424, #514747 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+/*.curarmate__texto{
+	font-size: 20px;
+	text-align: center;
+	padding: 30px 15px 30px 25px;
+	height: 300px;
+	color: whitesmoke;
+}*/
+.tutoriales {
+  background-color: darkgray;
+  color: black;
+  font-family: 'Poiret One', cursive;
+  display: inline-block;
+  margin: 0 0.8rem;
+  animation: backInRight;
+  animation-duration: 2s;
+  animation-delay: 2s; }
+
+.tutoriales__titulo {
+  font-size: 30px; }
+
+.tutoriales__tiposdemates {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+/*vista mobile tips materos*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .grid-tipsmateros {
+    display: grid;
+    grid-template-areas: "grid-curarmate-titulo" "grid-curarmate-titulo" "grid-curarmate-texto" "grid-curarmate-texto" "grid-tutoriales" "grid-tutoriales";
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 650px;
+    background-color: darkgray; }
+  .grid-curarmate-titulo {
+    grid-area: grid-curarmate-titulo; }
+  .grid-curarmate-texto {
+    grid-area: grid-curarmate-texto; }
+  .grid-tutoriales {
+    grid-area: grid-tutoriales; }
+  .curarmate {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: darkgray;
+    font-family: 'Poiret One', cursive;
+    height: 300px; }
+  .curarmate__titulo {
+    display: flex;
+    font-size: 15px;
+    color: whitesmoke;
+    padding-right: 80px !important; }
+  .curarmate__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 45px;
+    padding-right: 125px;
+    font-size: 10px; }
+  .tutoriales {
+    background-color: darkgray;
+    color: black;
+    font-family: 'Poiret One', cursive; }
+  .tutoriales__titulo {
+    font-size: 20px; }
+  .tutoriales__tiposdemates {
+    font-size: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px !important; }
+  .video-tipos-mates {
+    display: flex;
+    height: 200px !important;
+    width: 250px !important;
+    padding-left: 35px !important; } }
+
+/*yerbas*/
+/*grid yerba rei verde*/
+.yerbas {
+  display: grid;
+  grid-template-areas: "grid-yerbas-reiverde" "grid-reiverde-img" "grid-yerbas-canarias" "grid-yerbas-canarias-img" "grid-yerbas-carrito" "grid-yerbas-carrito";
+  grid-template-columns: 100%;
+  grid-template-rows: 250px 300px 350px;
+  background-color: darkgray; }
+
+.grid-yerbas-reiverde {
+  grid-area: grid-yerbas-reiverde; }
+
+.grid-yerbas-img {
+  grid-area: grid-yerbas-img; }
+
+.grid-yerbas-canarias {
+  grid-area: grid-yerbas-canarias; }
+
+.grid-yerbas-canarias-img {
+  grid-area: grid-yerbas-canarias-img; }
+
+.grid-yerbas-carrito {
+  grid-area: grid-yerbas-carrito; }
+
+.yerbas__reiverde {
+  font-family: 'Poiret One', cursive;
+  background-color: darkgray;
+  color: whitesmoke; }
+
+.yerbas__consulta {
+  font-size: 32px;
+  text-align: center;
+  padding-top: 25px; }
+
+.yerbas__reiverde-titulo {
+  padding-left: 25px;
+  padding-top: 35px;
+  font-size: 23px; }
+
+.yerbas__reiverde--tamaño {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 18px; }
+
+.yerbas__reiverde--cantidad {
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 18px; }
+
+.yerbas__reiverde--imagen {
+  display: flex;
+  justify-content: center; }
+
+.yerbas__canarias {
+  font-family: 'Poiret One', cursive;
+  background-color: darkgray;
+  color: whitesmoke; }
+
+.yerbas__canarias-titulo {
+  font-size: 23px;
+  padding-top: 150px;
+  padding-left: 25px; }
+
+.yerbas__canarias--tamaño {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 18px; }
+
+.yerbas__canarias--cantidad {
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 18px; }
+
+.yerbas__canarias--imagen {
+  display: flex;
+  justify-content: center; }
+
+.yerbas__agregar-a-carrito {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  padding-top: 150px;
+  padding-left: 25px;
+  padding-bottom: 35px; }
+
+/*vista mobile yerbas*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .yerbas {
+    display: grid;
+    grid-template-areas: "grid-yerbas-reiverde" "grid-reiverde-img" "grid-yerbas-canarias" "grid-yerbas-canarias-img" "grid-yerbas-carrito" "grid-yerbas-carrito";
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 300px 300px;
+    background-color: darkgray; }
+  .grid-yerbas-reiverde {
+    grid-area: grid-yerbas-reiverde; }
+  .grid-yerbas-img {
+    grid-area: grid-yerbas-img; }
+  .grid-yerbas-canarias {
+    grid-area: grid-yerbas-canarias; }
+  .grid-yerbas-canarias-img {
+    grid-area: grid-yerbas-canarias-img; }
+  .grid-yerbas-carrito {
+    grid-area: grid-yerbas-carrito; }
+  .yerbas__reiverde {
+    font-family: 'Poiret One', cursive;
+    background-color: darkgray;
+    color: whitesmoke; }
+  .yerbas__consulta {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 25px; }
+  .yerbas__reiverde-titulo {
+    padding-left: 25px;
+    padding-top: 35px;
+    font-size: 23px; }
+  .yerbas__reiverde--tamaño {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 18px; }
+  .yerbas__reiverde--cantidad {
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 18px; }
+  .yerbas__reiverde--imagen {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px; }
+  .yerbas__canarias {
+    font-family: 'Poiret One', cursive;
+    background-color: darkgray;
+    color: whitesmoke; }
+  .yerbas__canarias-titulo {
+    font-size: 23px;
+    padding-top: 40px;
+    padding-left: 25px; }
+  .yerbas__canarias--tamaño {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 18px; }
+  .yerbas__canarias--cantidad {
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 18px; }
+  .yerbas__canarias--imagen {
+    display: flex;
+    justify-content: center; }
+  .yerbas__agregar-a-carrito {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-bottom: 35px; } }

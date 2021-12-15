@@ -1,0 +1,91 @@
+/*ventas por mayor*/
+/*grid ventas por mayor*/
+.grid-ventas{
+	display: grid;
+	grid-template-areas: 
+	"grid-ventas-titulo" "grid-ventas-titulo"
+	"grid-ventas-texto" "grid-ventas-texto"
+	"grid-ventas-formulario" "grid-ventas-formulario" ;
+	grid-template-columns: 100%;
+	grid-template-rows: 100px 50px 350px;
+	background-color: darkgray;
+}
+.grid-ventas-titulo{
+	grid-area: grid-ventas-titulo;
+}
+.grid-ventas-texto{
+	grid-area: grid-ventas-texto;
+}
+.grid-ventas-formulario{
+	grid-area: grid-ventas-formulario;
+}
+
+.ventas-por-mayor{
+	background-color: darkgray;
+	font-family: 'Poiret One', cursive;
+	color: whitesmoke;
+}
+.ventas-por-mayor__titulo{
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+.ventas-por-mayor__texto{
+	font-size: 15px;
+	text-align: center;
+	padding-top: 68px;
+	padding-left: 30px;
+}
+.ventas-por-mayor__formulario{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+
+}
+
+/*vista mobile ventas por mayor*/
+@media only screen and (min-width: 0px) and (max-width: 768px){
+.grid-ventas{
+	display: grid;
+	grid-template-areas: 
+	"grid-ventas-titulo" "grid-ventas-titulo"
+	"grid-ventas-texto" "grid-ventas-texto"
+	"grid-ventas-formulario" "grid-ventas-formulario" ;
+	grid-template-columns: 100%;
+	grid-template-rows: 100px 50px 350px;
+	background-color: darkgray;
+}
+.grid-ventas-titulo{
+	grid-area: grid-ventas-titulo;
+}
+.grid-ventas-texto{
+	grid-area: grid-ventas-texto;
+}
+.grid-ventas-formulario{
+	grid-area: grid-ventas-formulario;
+}
+
+.ventas-por-mayor{
+	background-color: darkgray;
+	font-family: 'Poiret One', cursive;
+	color: whitesmoke;
+}
+.ventas-por-mayor__titulo{
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+.ventas-por-mayor__texto{
+	font-size: 15px;
+	text-align: center;
+	padding-top: 68px;
+	padding-left: 30px;
+}
+.ventas-por-mayor__formulario{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+
+}
+
+}

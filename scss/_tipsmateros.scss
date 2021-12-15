@@ -1,0 +1,141 @@
+/*tips materos*/
+/*aplico grid */
+.grid-tipsmateros{
+	display: grid;
+	grid-template-areas: 
+	"grid-curarmate-titulo" "grid-curarmate-titulo"
+	"grid-curarmate-texto" "grid-curarmate-texto"
+	"grid-tutoriales" "grid-tutoriales" ;
+	grid-template-columns: 100%;
+	grid-template-rows: 350px 650px;
+	background-color: darkgray;
+}
+.grid-curarmate-titulo{
+	grid-area: grid-curarmate-titulo;
+}
+.grid-curarmate-texto{
+	grid-area: grid-curarmate-texto;
+}
+.grid-tutoriales{
+	grid-area: grid-tutoriales;
+}
+
+.curarmate{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: darkgray;
+	font-family: 'Poiret One', cursive;
+	height: 300px;
+	background: radial-gradient(circle, #757a83 0%, #bbbfc5 100%);
+}
+.curarmate__titulo{
+	display: flex;
+	font-size: 30px;
+	color: whitesmoke;
+}
+.curarmate__texto{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 25px;
+    background: -webkit-linear-gradient(
+    45deg, #292424, #514747 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+/*.curarmate__texto{
+	font-size: 20px;
+	text-align: center;
+	padding: 30px 15px 30px 25px;
+	height: 300px;
+	color: whitesmoke;
+}*/
+
+.tutoriales{
+	background-color: darkgray;
+	color: black;
+	font-family: 'Poiret One', cursive;
+	display: inline-block;
+    margin: 0 0.8rem;
+    animation: backInRight; 
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+.tutoriales__titulo{
+	font-size: 30px;
+}
+.tutoriales__tiposdemates{
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*vista mobile tips materos*/
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	.grid-tipsmateros{
+	display: grid;
+	grid-template-areas: 
+	"grid-curarmate-titulo" "grid-curarmate-titulo"
+	"grid-curarmate-texto" "grid-curarmate-texto"
+	"grid-tutoriales" "grid-tutoriales" ;
+	grid-template-columns: 100%;
+	grid-template-rows: 350px 650px;
+	background-color: darkgray;
+}
+.grid-curarmate-titulo{
+	grid-area: grid-curarmate-titulo;
+}
+.grid-curarmate-texto{
+	grid-area: grid-curarmate-texto;
+}
+.grid-tutoriales{
+	grid-area: grid-tutoriales;
+}
+
+.curarmate{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: darkgray;
+	font-family: 'Poiret One', cursive;
+	height: 300px;
+}
+.curarmate__titulo{
+	display: flex;
+	font-size: 15px;
+	color: whitesmoke;
+	padding-right: 80px !important;
+}
+.curarmate__texto{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 45px;
+	padding-right: 125px;
+	font-size: 10px;
+}
+.tutoriales{
+	background-color: darkgray;
+	color: black;
+	font-family: 'Poiret One', cursive;
+}
+.tutoriales__titulo{
+	font-size: 20px;
+}
+.tutoriales__tiposdemates{
+	font-size: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 35px !important;
+}
+.video-tipos-mates{
+	display: flex;
+	height: 200px !important;
+	width: 250px !important;
+	padding-left: 35px !important;
+}
+
+}
