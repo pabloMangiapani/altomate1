@@ -1,3 +1,5 @@
+@import "mixin";
+
 /*reset*/
 * {
 	margin: 0;
@@ -87,8 +89,7 @@ section p {
 }
 
 header div a img{
-	width: 40px;
-	height: 35px;
+	@include sizes(95px,80px);
 	padding-left: 10px;
 }
 

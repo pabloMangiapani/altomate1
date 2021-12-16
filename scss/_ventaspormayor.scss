@@ -26,8 +26,7 @@
 	color: whitesmoke;
 }
 .ventas-por-mayor__titulo{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 	font-size: 30px;
 }
 .ventas-por-mayor__texto{
@@ -37,8 +36,7 @@
 	padding-left: 30px;
 }
 .ventas-por-mayor__formulario{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 	padding-bottom: 40px;
 
 }
@@ -71,8 +69,7 @@
 	color: whitesmoke;
 }
 .ventas-por-mayor__titulo{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 	font-size: 30px;
 }
 .ventas-por-mayor__texto{
@@ -82,8 +79,7 @@
 	padding-left: 30px;
 }
 .ventas-por-mayor__formulario{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 	padding-bottom: 40px;
 
 }

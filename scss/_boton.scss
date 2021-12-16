@@ -1,0 +1,17 @@
+.boton{
+	font-family: 'Poiret One', cursive;
+	font-size: 15px;
+	background-color: lightblue;
+	color: grey;
+	border: 1px solid black;
+}
+.boton--resetear{
+	@extend .boton;
+	background-color: yellow;
+	color: red;
+}
+.boton--nada{
+	@extend .boton;
+	background-color: green;
+	color: white;
+}

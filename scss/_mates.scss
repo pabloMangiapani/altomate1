@@ -1,3 +1,5 @@
+@import "mixin";
+
 /*mates*/
 .mates{
 	background-color: darkgray;
@@ -51,8 +53,7 @@
 	grid-area: mate__seis;
 }
 .mates{
-	display: flex;
-	justify-content: space-evenly;
+	@include flex-row-space-evenly;
 }
 
 /*vista mobile mates*/
@@ -102,32 +103,25 @@
 	grid-area: mate__seis;
 }
 .mates{
-	display: flex;
-	justify-content: space-evenly;
+	@include flex-row-space-evenly;
 }
 .img__uno{
-	width: 150px !important;
-	height: 120px !important;
+	@include sizes(150px,120px);
 }
 .img__dos{
-	width: 150px !important;
-	height: 120px !important;
+	@include sizes(150px,120px);
 }
 .img__tres{
-	width: 150px !important;
-	height: 120px !important;
+	@include sizes(150px,120px);
 }
 .img__cuatro{
-	width: 150px !important;
-	height: 120px !important;
+	@include sizes(150px,120px);
 }
 .img__cinco{
-	width: 150px !important;
-	height: 120px !important;
+	@include sizes(150px,120px);
 }
 .img__seis{
-	width: 150px !important;
-	height: 120px !important;
+	@include sizes(150px,120px);
 }
 
 .mates{

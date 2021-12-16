@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .header {
+  background-color: grey;
   position: sticky;
   top: 0px;
   margin-right: -15px;
@@ -113,8 +114,8 @@ section p {
   .footer {
     grid-area: footer; }
   header div a img {
-    width: 40px;
-    height: 35px;
+    height: 80px;
+    width: 95px;
     padding-left: 10px; }
   /*imagen con texto index */
   .parallax {
@@ -144,15 +145,16 @@ section p {
 
 /*footer google maps*/
 .footer__mapa {
-  padding: 30px 15px 30px 25px;
-  width: 300px;
   height: 200px;
+  width: 300px;
+  padding: 30px 15px 30px 25px;
   padding-left: 50px;
   padding-right: 50px; }
 
 /*aplico flexbox en footer*/
 .footer {
   display: flex;
+  flex-direction: row;
   justify-content: space-around; }
 
 div h2 {
@@ -175,19 +177,19 @@ div p {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   /*footer*/
   .footer {
-    background-color: lightgray; }
+    background-color: lightgrey; }
   /*footer google maps*/
   .footer__mapa {
-    padding: 30px 15px 30px 25px;
-    width: 300px;
     height: 150px;
+    width: 300px;
+    padding: 30px 15px 30px 25px;
     padding-left: 50px;
     padding-right: 50px; }
   /*aplico flexbox en footer*/
   .footer {
     display: flex;
-    justify-content: space-around;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: space-around; }
   div h2 {
     color: black;
     border-color: darkgray;
@@ -248,6 +250,7 @@ div p {
 
 .mates {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly; }
 
 /*vista mobile mates*/
@@ -278,25 +281,26 @@ div p {
     grid-area: mate__seis; }
   .mates {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly; }
   .img__uno {
-    width: 150px !important;
-    height: 120px !important; }
+    height: 120px;
+    width: 150px; }
   .img__dos {
-    width: 150px !important;
-    height: 120px !important; }
+    height: 120px;
+    width: 150px; }
   .img__tres {
-    width: 150px !important;
-    height: 120px !important; }
+    height: 120px;
+    width: 150px; }
   .img__cuatro {
-    width: 150px !important;
-    height: 120px !important; }
+    height: 120px;
+    width: 150px; }
   .img__cinco {
-    width: 150px !important;
-    height: 120px !important; }
+    height: 120px;
+    width: 150px; }
   .img__seis {
-    width: 150px !important;
-    height: 120px !important; }
+    height: 120px;
+    width: 150px; }
   .mates {
     background-color: darkgray;
     font-family: 'Poiret One', cursive;
@@ -307,7 +311,6 @@ div p {
     height: 750px;
     margin: 0px; } }
 
-/*tips materos*/
 /*aplico grid */
 .grid-tipsmateros {
   display: grid;
@@ -327,6 +330,7 @@ div p {
 
 .curarmate {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   background-color: darkgray;
@@ -391,6 +395,7 @@ div p {
     grid-area: grid-tutoriales; }
   .curarmate {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     background-color: darkgray;
@@ -420,9 +425,9 @@ div p {
     padding-bottom: 15px;
     padding-left: 35px !important; }
   .video-tipos-mates {
+    height: 200px;
+    width: 250px;
     display: flex;
-    height: 200px !important;
-    width: 250px !important;
     padding-left: 35px !important; } }
 
 /*yerbas*/
@@ -476,6 +481,7 @@ div p {
 
 .yerbas__reiverde--imagen {
   display: flex;
+  flex-direction: row;
   justify-content: center; }
 
 .yerbas__canarias {
@@ -500,10 +506,12 @@ div p {
 
 .yerbas__canarias--imagen {
   display: flex;
+  flex-direction: row;
   justify-content: center; }
 
 .yerbas__agregar-a-carrito {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   font-size: 16px;
   padding-top: 150px;
@@ -550,6 +558,7 @@ div p {
     font-size: 18px; }
   .yerbas__reiverde--imagen {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding-top: 40px; }
   .yerbas__canarias {
@@ -570,11 +579,103 @@ div p {
     font-size: 18px; }
   .yerbas__canarias--imagen {
     display: flex;
+    flex-direction: row;
     justify-content: center; }
   .yerbas__agregar-a-carrito {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     font-size: 16px;
     padding-top: 30px;
     padding-left: 25px;
     padding-bottom: 35px; } }
+
+/*ventas por mayor*/
+/*grid ventas por mayor*/
+.grid-ventas {
+  display: grid;
+  grid-template-areas: "grid-ventas-titulo" "grid-ventas-titulo" "grid-ventas-texto" "grid-ventas-texto" "grid-ventas-formulario" "grid-ventas-formulario";
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 50px 350px;
+  background-color: darkgray; }
+
+.grid-ventas-titulo {
+  grid-area: grid-ventas-titulo; }
+
+.grid-ventas-texto {
+  grid-area: grid-ventas-texto; }
+
+.grid-ventas-formulario {
+  grid-area: grid-ventas-formulario; }
+
+.ventas-por-mayor {
+  background-color: darkgray;
+  font-family: 'Poiret One', cursive;
+  color: whitesmoke; }
+
+.ventas-por-mayor__titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 30px; }
+
+.ventas-por-mayor__texto {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 68px;
+  padding-left: 30px; }
+
+.ventas-por-mayor__formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 40px; }
+
+/*vista mobile ventas por mayor*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .grid-ventas {
+    display: grid;
+    grid-template-areas: "grid-ventas-titulo" "grid-ventas-titulo" "grid-ventas-texto" "grid-ventas-texto" "grid-ventas-formulario" "grid-ventas-formulario";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 350px;
+    background-color: darkgray; }
+  .grid-ventas-titulo {
+    grid-area: grid-ventas-titulo; }
+  .grid-ventas-texto {
+    grid-area: grid-ventas-texto; }
+  .grid-ventas-formulario {
+    grid-area: grid-ventas-formulario; }
+  .ventas-por-mayor {
+    background-color: darkgray;
+    font-family: 'Poiret One', cursive;
+    color: whitesmoke; }
+  .ventas-por-mayor__titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px; }
+  .ventas-por-mayor__texto {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 68px;
+    padding-left: 30px; }
+  .ventas-por-mayor__formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 40px; } }
+
+.boton, .boton--resetear, .boton--nada {
+  font-family: 'Poiret One', cursive;
+  font-size: 15px;
+  background-color: lightblue;
+  color: grey;
+  border: 1px solid black; }
+
+.boton--resetear {
+  background-color: yellow;
+  color: red; }
+
+.boton--nada {
+  background-color: green;
+  color: white; }

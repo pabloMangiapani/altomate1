@@ -1,4 +1,6 @@
-/*tips materos*/
+@import "mixin";
+
+
 /*aplico grid */
 .grid-tipsmateros{
 	display: grid;
@@ -21,8 +23,7 @@
 }
 
 .curarmate{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 	flex-wrap: wrap;
 	background-color: darkgray;
 	font-family: 'Poiret One', cursive;
@@ -35,9 +36,7 @@
 	color: whitesmoke;
 }
 .curarmate__texto{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	@include flex-column-center;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 25px;
@@ -96,8 +95,7 @@
 }
 
 .curarmate{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 	flex-wrap: wrap;
 	background-color: darkgray;
 	font-family: 'Poiret One', cursive;
@@ -132,9 +130,8 @@
 	padding-left: 35px !important;
 }
 .video-tipos-mates{
+	@include sizes(250px,200px)
 	display: flex;
-	height: 200px !important;
-	width: 250px !important;
 	padding-left: 35px !important;
 }
 

@@ -51,8 +51,7 @@
 	font-size: 18px;
 }
 .yerbas__reiverde--imagen{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 }
 .yerbas__canarias{
 	font-family: 'Poiret One', cursive;
@@ -75,12 +74,10 @@
 	font-size: 18px;
 }
 .yerbas__canarias--imagen{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 }
 .yerbas__agregar-a-carrito{
-	display: flex;
-	justify-content: space-around;
+	@include flex-row-space-around;
 	font-size: 16px;
 	padding-top: 150px;
 	padding-left: 25px;
@@ -140,8 +137,7 @@
 	font-size: 18px;
 }
 .yerbas__reiverde--imagen{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 	padding-top: 40px;
 }
 .yerbas__canarias{
@@ -165,12 +161,10 @@
 	font-size: 18px;
 }
 .yerbas__canarias--imagen{
-	display: flex;
-	justify-content: center;
+	@include flex-row-center;
 }
 .yerbas__agregar-a-carrito{
-	display: flex;
-	justify-content: space-around;
+	@include flex-row-space-around;
 	font-size: 16px;
 	padding-top: 30px;
 	padding-left: 25px;
