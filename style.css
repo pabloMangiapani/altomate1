@@ -71,12 +71,11 @@ ul li a {
     margin-right: -15px;
     margin-left: -15px;
     justify-content: flex-end;
-    font-family: 'Poiret One', cursive !important;
-    padding-right: 40px; }
+    font-family: 'Poiret One', cursive !important; }
   .header__logo {
     display: flex !important;
     justify-content: flex-start !important;
-    padding-right: 200px; }
+    padding-right: 550px; }
   /*aplico flex en logo*/
   .header {
     display: flex;
@@ -95,7 +94,7 @@ ul li a {
 
 .grid-inicio {
   display: grid;
-  grid-template-areas: "header" "header" "header"  "parallax" "parallax" "parallax" "footer" "footer" "footer";
+  grid-template-areas: "header" "header" "header"  "parallax" "parallax" "parallax" "footer" "footer" "footer";
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto; }
 
@@ -135,7 +134,7 @@ section p {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .grid-inicio {
     display: grid;
-    grid-template-areas: "header" "header" "parallax"  "footer";
+    grid-template-areas: "header" "header" "parallax"  "footer";
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
     background-color: lightgray; }
@@ -217,10 +216,9 @@ div p {
   /*footer google maps*/
   .footer__mapa {
     height: 150px;
-    width: 350px;
+    width: 600px;
     padding: 30px 15px 30px 25px;
-    padding-left: 10px;
-    padding-right: 20px; }
+    padding-left: 200px; }
   /*aplico flexbox en footer*/
   .footer {
     display: flex;
@@ -255,7 +253,7 @@ div p {
 /*grid mates*/
 .galeria__mates {
   display: grid;
-  grid-template-areas: "mate__uno mate__dos mate__tres"  "img__uno img__dos img__tres"  "descrip__uno descrip__dos descrip__tres"  "precio__uno precio__dos precio__tres"  "mate__cuatro mate__cinco mate__seis"  "img__cuatro img__cinco img__seis"  "descrip__cuatro descrip__cinco descrip__seis"  "precio__cuatro precio__cinco precio__seis";
+  grid-template-areas: "mate__uno mate__dos mate__tres"  "img__uno img__dos img__tres"  "descrip__uno descrip__dos descrip__tres"  "precio__uno precio__dos precio__tres"  "mate__cuatro mate__cinco mate__seis"  "img__cuatro img__cinco img__seis"  "descrip__cuatro descrip__cinco descrip__seis"  "precio__cuatro precio__cinco precio__seis";
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 14% 12% 12% 12% 12% 12% 12% 14%;
   grid-row-gap: 10px;
@@ -293,7 +291,7 @@ div p {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .galeria__mates {
     display: grid;
-    grid-template-areas: "mate__uno mate__dos"  "img__uno img__dos" "descrip__uno descrip__dos" "precio__uno precio__dos" "mate__tres mate__cuatro" "img__tres img__cuatro " "descrip__tres descrip__cuatro"  "precio__tres precio__cuatro"  "mate__cinco mate__seis"  "img__cinco img__seis"  "descrip__cinco descrip__seis"  "precio__cinco precio__seis";
+    grid-template-areas: "mate__uno mate__dos"  "img__uno img__dos" "descrip__uno descrip__dos" "precio__uno precio__dos" "mate__tres mate__cuatro" "img__tres img__cuatro " "descrip__tres descrip__cuatro"  "precio__tres precio__cuatro"  "mate__cinco mate__seis"  "img__cinco img__seis"  "descrip__cinco descrip__seis"  "precio__cinco precio__seis";
     grid-template-columns: 150px;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
     grid-row-gap: 5px;
@@ -350,7 +348,7 @@ div p {
 /*aplico grid */
 .grid-tipsmateros {
   display: grid;
-  grid-template-areas: "grid-curarmate-titulo" "grid-curarmate-titulo" "grid-curarmate-texto" "grid-curarmate-texto" "grid-tutoriales" "grid-tutoriales";
+  grid-template-areas: "grid-curarmate-titulo" "grid-curarmate-titulo" "grid-curarmate-texto" "grid-curarmate-texto" "grid-tutoriales" "grid-tutoriales";
   grid-template-columns: 100%;
   grid-template-rows: 350px 650px;
   background-color: darkgray; }
@@ -419,7 +417,7 @@ div p {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .grid-tipsmateros {
     display: grid;
-    grid-template-areas: "grid-curarmate-titulo" "grid-curarmate-titulo" "grid-curarmate-texto" "grid-curarmate-texto" "grid-tutoriales" "grid-tutoriales";
+    grid-template-areas: "grid-curarmate-titulo" "grid-curarmate-titulo" "grid-curarmate-texto" "grid-curarmate-texto" "grid-tutoriales" "grid-tutoriales";
     grid-template-columns: 100%;
     grid-template-rows: 350px 650px;
     background-color: darkgray; }
@@ -470,7 +468,7 @@ div p {
 /*grid yerba rei verde*/
 .yerbas {
   display: grid;
-  grid-template-areas: "grid-yerbas-reiverde" "grid-reiverde-img" "grid-yerbas-canarias" "grid-yerbas-canarias-img" "grid-yerbas-carrito" "grid-yerbas-carrito";
+  grid-template-areas: "grid-yerbas-reiverde" "grid-reiverde-img" "grid-yerbas-canarias" "grid-yerbas-canarias-img" "grid-yerbas-carrito" "grid-yerbas-carrito";
   grid-template-columns: 100%;
   grid-template-rows: 250px 300px 350px;
   background-color: darkgray; }
@@ -558,7 +556,7 @@ div p {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .yerbas {
     display: grid;
-    grid-template-areas: "grid-yerbas-reiverde" "grid-reiverde-img" "grid-yerbas-canarias" "grid-yerbas-canarias-img" "grid-yerbas-carrito" "grid-yerbas-carrito";
+    grid-template-areas: "grid-yerbas-reiverde" "grid-reiverde-img" "grid-yerbas-canarias" "grid-yerbas-canarias-img" "grid-yerbas-carrito" "grid-yerbas-carrito";
     grid-template-columns: 100%;
     grid-template-rows: 200px 300px 300px;
     background-color: darkgray; }
@@ -630,7 +628,7 @@ div p {
 /*grid ventas por mayor*/
 .grid-ventas {
   display: grid;
-  grid-template-areas: "grid-ventas-titulo" "grid-ventas-titulo" "grid-ventas-texto" "grid-ventas-texto" "grid-ventas-formulario" "grid-ventas-formulario";
+  grid-template-areas: "grid-ventas-titulo" "grid-ventas-titulo" "grid-ventas-texto" "grid-ventas-texto" "grid-ventas-formulario" "grid-ventas-formulario";
   grid-template-columns: 100%;
   grid-template-rows: 100px 50px 350px;
   background-color: darkgray; }
@@ -671,7 +669,7 @@ div p {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .grid-ventas {
     display: grid;
-    grid-template-areas: "grid-ventas-titulo" "grid-ventas-titulo" "grid-ventas-texto" "grid-ventas-texto" "grid-ventas-formulario" "grid-ventas-formulario";
+    grid-template-areas: "grid-ventas-titulo" "grid-ventas-titulo" "grid-ventas-texto" "grid-ventas-texto" "grid-ventas-formulario" "grid-ventas-formulario";
     grid-template-columns: 100%;
     grid-template-rows: 100px 50px 350px;
     background-color: darkgray; }

@@ -45,9 +45,10 @@ div p {
 
 /*footer google maps*/
   .footer__mapa {
-  	@include sizes(600px,150px)
+  	@include sizes(350px,150px)
     padding: 30px 15px 30px 25px;
-    padding-left: 200px; }
+    padding-left: 10px; 
+    padding-right: 20px;}
 
 /*aplico flexbox en footer*/
 .footer{
