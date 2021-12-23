@@ -39,11 +39,12 @@
 	@include flex-column-center;
 	padding-left: 20px;
 	padding-right: 20px;
-	font-size: 25px;
+	padding-bottom: 65px;
+	font-size: 20px;
     background: -webkit-linear-gradient(
     45deg, #292424, #514747 80%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: whitesmoke;
 }
 /*.curarmate__texto{
 	font-size: 20px;
@@ -61,7 +62,6 @@
     margin: 0 0.8rem;
     animation: backInRight; 
     animation-duration: 2s;
-    animation-delay: 2s;
 }
 .tutoriales__titulo{
 	font-size: 30px;
