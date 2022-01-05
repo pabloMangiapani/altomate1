@@ -58,8 +58,11 @@
 }
 
 header div img{
-	height: 80px;
+	height: 90px;
 	width: 95px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 ul li a{
@@ -113,8 +116,11 @@ nav li{
 }
 
 header div img{
-	height: 80px;
+	height: 90px;
 	width: 95px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 ul li a{
@@ -152,8 +158,12 @@ ul li a{
 }
 
 header div img{
-	height: 60px;
-	width: 70px;
+	height: 70px;
+	width: 65px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
 }
 	
 }
@@ -211,6 +221,15 @@ ul li a{
 header div img{
 	height: 40px;
 	width: 45px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+}
+.favicon{
+    height: 40px !important;
+    width: 45px !important;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
 }
 	
 }
