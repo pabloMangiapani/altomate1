@@ -74,8 +74,9 @@
 
 /*vista mobile tips materos*/
 @media only screen and (min-width: 0px) and (max-width: 768px){
-	.grid-tipsmateros{
-	display: grid;
+
+.grid-tipsmateros{
+    display: grid;
 	grid-template-areas: 
 	"grid-curarmate-titulo" "grid-curarmate-titulo"
 	"grid-curarmate-texto" "grid-curarmate-texto"
@@ -119,6 +120,7 @@
 	background-color: darkgray;
 	color: black;
 	font-family: 'Poiret One', cursive;
+	margin: 15px;
 }
 .tutoriales__titulo{
 	font-size: 20px;

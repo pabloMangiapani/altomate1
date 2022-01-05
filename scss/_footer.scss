@@ -15,6 +15,20 @@
 	padding-right: 50px;
 }
 
+/*footer google maps en page mates*/
+.footer-mapa {
+	@include sizes(300px,200px)
+	padding: 30px 15px 30px 25px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+g-maps{
+	display: flex;
+	justify-content: center;
+	padding-right: 10px;
+}
+
 /*aplico flexbox en footer*/
 .footer{
 	@include flex-row-space-around;
@@ -50,9 +64,21 @@ div p {
     padding-left: 60px; 
 }
 
+/*footer google maps page mates*/
+  .footer-mapa {
+  	@include sizes(350px,150px)
+    padding: 30px 15px 30px 25px; 
+}
+
+.g-maps{
+	display: flex;
+	justify-content: center;
+}
+
 /*aplico flexbox en footer*/
 .footer{
 	@include flex-column-space-around;
+	margin: -15px;
 }
 div h2 {
 	color: map-get($paleta--colores,negro);

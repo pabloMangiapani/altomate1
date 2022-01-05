@@ -8,10 +8,45 @@
   font-family: 'Poiret One', cursive !important;
   background-color: grey; }
 
+.header-mates {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: flex-end;
+  font-family: 'Poiret One', cursive !important;
+  background-color: grey; }
+
 /* flex en logo */
 .header__logo {
   display: flex;
   justify-content: flex-start; }
+
+.header__menu--blanco {
+  color: whitesmoke;
+  border-color: darkgray;
+  list-style-type: none;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px; }
+
+/*barra nav con flexbox*/
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 1200px; }
+
+/* flex logo en page mates */
+.header-logo {
+  display: flex;
+  justify-content: flex-start !important; }
+
+/*barra nav con flexbox page mates*/
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 1200px;
+  padding-right: 50px; }
 
 header div img {
   height: 80px;
@@ -20,8 +55,19 @@ header div img {
 ul li a {
   color: whitesmoke !important; }
 
+nav li {
+  display: inline-block;
+  padding: 15px; }
+
 @media only screen and (min-width: 1024px) {
   .header {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: flex-end;
+    font-family: 'Poiret One', cursive !important;
+    background-color: grey; }
+  .header-mates {
     display: flex;
     margin-right: -15px;
     margin-left: -15px;
@@ -33,6 +79,17 @@ ul li a {
     display: flex;
     justify-content: flex-start;
     padding-right: 800px; }
+  /* flex logo en page mates */
+  .header-logo {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px; }
+  /*barra nav con flexbox page mates*/
+  .header-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+    padding-right: 40px; }
   header div img {
     height: 80px;
     width: 95px; }
@@ -77,6 +134,22 @@ ul li a {
     display: flex !important;
     justify-content: flex-start !important;
     padding-right: 200px; }
+  .header-mates {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: flex-end;
+    font-family: 'Poiret One', cursive !important; }
+  /* flex logo en page mates */
+  .header-logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 95px; }
+  .header-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+    padding-right: 30px; }
   /*aplico flex en logo*/
   .header {
     display: flex;
@@ -187,6 +260,19 @@ section p {
   padding-left: 50px;
   padding-right: 50px; }
 
+/*footer google maps en page mates*/
+.footer-mapa {
+  height: 200px;
+  width: 300px;
+  padding: 30px 15px 30px 25px;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+g-maps {
+  display: flex;
+  justify-content: center;
+  padding-right: 10px; }
+
 /*aplico flexbox en footer*/
 .footer {
   display: flex;
@@ -220,11 +306,20 @@ div p {
     width: 350px;
     padding: 30px 15px 30px 25px;
     padding-left: 60px; }
+  /*footer google maps page mates*/
+  .footer-mapa {
+    height: 150px;
+    width: 350px;
+    padding: 30px 15px 30px 25px; }
+  .g-maps {
+    display: flex;
+    justify-content: center; }
   /*aplico flexbox en footer*/
   .footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin: -15px; }
   div h2 {
     color: black;
     border-color: darkgray;
@@ -260,7 +355,8 @@ div p {
   grid-row-gap: 10px;
   grid-column-gap: 15px;
   justify-content: space-evenly;
-  padding-top: 85px; }
+  padding-top: 85px;
+  padding-left: 75px; }
 
 .border {
   border: 1px solid black; }
@@ -344,7 +440,7 @@ div p {
     text-align: left;
     list-style-type: none;
     height: 750px;
-    margin: 0px; } }
+    margin: -15px; } }
 
 /*aplico grid */
 .grid-tipsmateros {
@@ -451,7 +547,8 @@ div p {
   .tutoriales {
     background-color: darkgray;
     color: black;
-    font-family: 'Poiret One', cursive; }
+    font-family: 'Poiret One', cursive;
+    margin: 15px; }
   .tutoriales__titulo {
     font-size: 20px; }
   .tutoriales__tiposdemates {

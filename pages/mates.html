@@ -9,45 +9,29 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-    <!-- css bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<!-- nuestro css -->
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 	<!-- barra nav del sitio -->
-	<div class="container-fluid">
-
-		<header class="header" class="row">
-			<div class="header__logo"  class="grid-logo"> 
-					<img src="../assets/img/favicon.jpg" alt="logo"> 
-			   </div>
-			<nav class="navbar navbar-expand-lg navbar-light navbar-nav-scroll">
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarNav">
-                 <ul class="navbar-nav">
-                   <li class="nav-item active">
-                     <a class="nav-link" href="../index.html">INICIO <span class="sr-only">(current)</span></a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="#">MATES</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="../pages/yerbas.html">YERBAS</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="../pages/ventaspormayor.html">VENTAS POR MAYOR</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="../pages/tipsmateros.html">TIPS MATEROS</a>
-                   </li>
-                 </ul>
-               </div>
-            </nav>
-		</header>
-	</div>
+	<header class="header-mates">
+		<!-- logo -->
+		<div class="header-logo" class="grid-logo"> 
+			<a href="../index.html">
+				<img src="../assets/img/favicon.jpg" alt="logo">
+			</a>
+			 
+		</div>
+		<!-- nav menu barra -->
+		<nav class="header__menu header-menu" class="grid-nav">
+			<!-- lista no ordenada del menu barra -->	
+			<li><a href="../index.html" class="header__menu--blanco">INICIO</a></li>
+			<li><a href="#" class="header__menu--blanco" >MATES</a></li>
+			<li><a href="../pages/yerbas.html" class="header__menu--blanco">YERBAS</a></li>
+			<li><a href="../pages/ventaspormayor.html" class="header__menu--blanco">VENTAS POR MAYOR</a></li>
+			<li><a href="../pages/tipsmateros.html" class="header__menu--blanco">TIPS MATEROS</a></li>
+		</nav>
+	</header>
 	<!-- cierre barra nav del sitio -->
 	<!-- inicio contenido -->
 	<main class="mates">
@@ -94,21 +78,21 @@
 	</main>
 	<!-- cierre contenido -->
 	<!-- inicio footer -->
-	<footer class="footer" class="grid-footer" class="container-fluid">
-		<div class="row">
-			<div class="col-lg-4 col-sm-4">
+	<footer class="footer" class="grid-footer">
+		<div>
+			<div class="g-maps">
 			<!-- mapa ubicacion iframe-->
-				<iframe class="footer__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13394.052503775642!2d-60.6742306!3d-32.9374595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c0a8e8fb9fd8392!2sMates%20Alto%20Mate!5e0!3m2!1ses!2sar!4v1635495009048!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+				<iframe class="footer-mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13394.052503775642!2d-60.6742306!3d-32.9374595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c0a8e8fb9fd8392!2sMates%20Alto%20Mate!5e0!3m2!1ses!2sar!4v1635495009048!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
 			</div>
 		</div>
-		<div class="footer__contacto" class="col-lg-4 col-sm-4">
+		<div class="footer__contacto">
 			<!-- contacto en pie de pagina -->
 			<h2>CONTACTO</h2>
 		    <p>contacto@altomate.com</p>
 		    <p>tel:341 9857801</p>
 		</div>
 		<!-- RRSS -->
-		<div class="footer__rrss" class="col-lg-4 col-sm-4">
+		<div class="footer__rrss">
 			<!-- logos RRSS -->
 			<h2>SEGUINOS EN</h2>
 			<P>Facebook</P>
